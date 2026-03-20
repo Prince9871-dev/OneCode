@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { db } from "@/lib/db";
+import UserButton from "@/modules/auth/components/user-button";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+
   return (
-<Button> YEAAA </Button>
-  );
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <button>
+        GET STARTED 
+      </button>
+      <UserButton/>
+    </div>
+  )
 }
